@@ -16,7 +16,7 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
  * @date 2021-4-27
  */
 @Configuration
-@MapperScan(basePackages = {"com.trace.base.tool.mapper.**"}, sqlSessionFactoryRef = "sqlSessionFactory")
+@MapperScan(basePackages = {"com.ddd.demo.mapper.**"}, sqlSessionFactoryRef = "sqlSessionFactory")
 public class DataBaseConfiguration {
     @Value("${hikaricp.dataSource.jdbc.driverClassName}")
     private String driverClassName;
