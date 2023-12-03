@@ -33,7 +33,6 @@ public class CompensateSelectFacadeImpl implements CompensateSelectFacade {
         if (Objects.isNull(orderResponse)) {
             throw new CompensateException(CompensateFailEnum.ORDER_IS_NULL);
         }
-        // todo 判断订单是否满足售后补偿的条件
         return orderResponse;
     }
 

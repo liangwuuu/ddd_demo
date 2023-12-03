@@ -9,7 +9,7 @@ import org.apache.commons.lang3.ArrayUtils;
 import org.springframework.stereotype.Component;
 
 /**
- * 自动审批
+ * 手动审批
  *
  * @author wl
  * @date 2021-9-1
