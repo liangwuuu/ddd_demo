@@ -27,6 +27,8 @@ public class CompensateSelectFacadeImpl implements CompensateSelectFacade {
     @Autowired
     private UserFeign userFeign;
 
+    // 防腐层提供基于 Facade 模式的粗粒度接口,并通过 Adapter 将输入的数据适配为 Bounded Context 内部服务所需的数据对象
+
     @Override
     public OrderV getOrderResponse(long subOid) {
         OrderV orderResponse = orderFeign.getOrderResponse(subOid);
